@@ -5,14 +5,17 @@ import 'package:widgets_app/presentation/screens/screens.dart';
 final appRouter = GoRouter(initialLocation: '/', routes: [
   GoRoute(
     path: '/',
+    name: HomeScreen.name,
     pageBuilder: (context, state) => const CupertinoPage(child: HomeScreen()),
   ),
   GoRoute(
       path: '/buttons',
+      name: ButtonsScreen.name,
       pageBuilder: (context, state) =>
           const CupertinoPage(child: ButtonsScreen())),
   GoRoute(
     path: '/card',
+    name: CardsScreen.name,
     pageBuilder: (context, state) => const CupertinoPage(child: CardsScreen()),
   ),
 ]);
