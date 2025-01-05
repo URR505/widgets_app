@@ -24,4 +24,10 @@ final appRouter = GoRouter(initialLocation: '/', routes: [
     pageBuilder: (context, state) =>
         const CupertinoPage(child: ProgressScreen()),
   ),
+  GoRoute(
+    path: '/snackbars',
+    name: SnackbarScreen.name,
+    pageBuilder: (context, state) =>
+        const CupertinoPage(child: SnackbarScreen()),
+  ),
 ]);
