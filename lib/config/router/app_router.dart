@@ -18,4 +18,10 @@ final appRouter = GoRouter(initialLocation: '/', routes: [
     name: CardsScreen.name,
     pageBuilder: (context, state) => const CupertinoPage(child: CardsScreen()),
   ),
+  GoRoute(
+    path: '/progress',
+    name: ProgressScreen.name,
+    pageBuilder: (context, state) =>
+        const CupertinoPage(child: ProgressScreen()),
+  ),
 ]);
