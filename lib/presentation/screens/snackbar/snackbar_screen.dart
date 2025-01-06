@@ -29,7 +29,9 @@ class SnackbarScreen extends StatelessWidget {
             child: const Text('Cancelar'),
           ),
           FilledButton(
-              onPressed: () => context.pop(), child: const Text('Aceptar'))
+            onPressed: () => context.pop(),
+            child: const Text('Aceptar'),
+          )
         ],
       ),
     );
