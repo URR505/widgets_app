@@ -36,4 +36,10 @@ final appRouter = GoRouter(initialLocation: '/', routes: [
     pageBuilder: (context, state) =>
         const CupertinoPage(child: AnimatedScreen()),
   ),
+  GoRoute(
+    path: '/ui-controls',
+    name: UiControlsScreens.name,
+    pageBuilder: (context, state) =>
+        const CupertinoPage(child: UiControlsScreens()),
+  ),
 ]);

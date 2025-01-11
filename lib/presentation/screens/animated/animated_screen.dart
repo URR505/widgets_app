@@ -36,11 +36,11 @@ class _AnimatedScreenState extends State<AnimatedScreen> {
           duration: const Duration(milliseconds: 400),
           curve: Curves.elasticOut,
           width: width <= 0 ? 0 : width,
-          height: height <= 0 ? 0 : width,
+          height: height <= 0 ? 0 : height,
           decoration: BoxDecoration(
               color: color,
               borderRadius:
-                  BorderRadius.circular(borderRadius < 0 ? 0 : width)),
+                  BorderRadius.circular(borderRadius < 0 ? 0 : borderRadius)),
         ),
       ),
       floatingActionButton: FloatingActionButton(
