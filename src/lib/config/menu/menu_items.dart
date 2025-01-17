@@ -70,6 +70,11 @@ const appMenuItems = <MenuItem>[
       link: '/tabs',
       icon: Icons.menu),
   MenuItem(
+      title: 'Grids',
+      subTitle: 'Grids',
+      link: '/grids',
+      icon: Icons.square_outlined),
+  MenuItem(
       title: 'Random Word',
       subTitle: 'Palabra aleatoria',
       link: '/random-word',
