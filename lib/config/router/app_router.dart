@@ -48,4 +48,16 @@ final appRouter = GoRouter(initialLocation: '/', routes: [
     pageBuilder: (context, state) =>
         const CupertinoPage(child: AppTutorialScreen()),
   ),
+  GoRoute(
+    path: '/infinite',
+    name: InfiniteScrollScreen.name,
+    pageBuilder: (context, state) =>
+        const CupertinoPage(child: InfiniteScrollScreen()),
+  ),
+  GoRoute(
+    path: '/counter',
+    name: CounterScreen.name,
+    pageBuilder: (context, state) =>
+        const CupertinoPage(child: CounterScreen()),
+  ),
 ]);
