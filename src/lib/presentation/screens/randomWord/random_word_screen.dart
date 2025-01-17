@@ -20,7 +20,7 @@ class RandomWordScreen extends ConsumerWidget {
             ],
           ),
         ),
-        body: TabBarView(
+        body: const TabBarView(
           children: [
             GeneratorTab(),
             FavoritesTab(),
@@ -32,6 +32,8 @@ class RandomWordScreen extends ConsumerWidget {
 }
 
 class GeneratorTab extends ConsumerWidget {
+  const GeneratorTab({super.key});
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final currentPair = ref.watch(wordPairProvider);
@@ -72,6 +74,8 @@ class GeneratorTab extends ConsumerWidget {
 }
 
 class FavoritesTab extends ConsumerWidget {
+  const FavoritesTab({super.key});
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final favorites = ref.watch(favoritesProvider);

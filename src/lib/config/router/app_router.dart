@@ -68,6 +68,11 @@ final appRouter = GoRouter(initialLocation: '/', routes: [
         const CupertinoPage(child: ThemeChangerScreen()),
   ),
   GoRoute(
+    path: '/tabs',
+    name: TabsScreen.name,
+    pageBuilder: (context, state) => const CupertinoPage(child: TabsScreen()),
+  ),
+  GoRoute(
     path: '/random-word',
     name: RandomWordScreen.name,
     pageBuilder: (context, state) =>

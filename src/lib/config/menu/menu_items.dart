@@ -61,9 +61,14 @@ const appMenuItems = <MenuItem>[
       icon: Icons.list_alt_rounded),
   MenuItem(
       title: 'Theme changer screen',
-      subTitle: 'Listas infinitas y pull to refresh',
+      subTitle: 'Cambiar tema de la aplicación',
       link: '/theme-changer',
       icon: Icons.palette_outlined),
+  MenuItem(
+      title: 'Tabs',
+      subTitle: 'Tabs para cambiar contenido',
+      link: '/tabs',
+      icon: Icons.menu),
   MenuItem(
       title: 'Random Word',
       subTitle: 'Palabra aleatoria',
