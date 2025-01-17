@@ -1,43 +1,48 @@
-# Miscellaneous
-*.class
-*.log
-*.pyc
-*.swp
-.DS_Store
-.atom/
-.buildlog/
-.history
-.svn/
-migrate_working_dir/
+# Ignorar todo excepto este archivo .gitignore
+*
+!.gitignore
 
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
-.idea/
+# Contenido de src
+/src/**
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
+# Miscellaneous dentro de src
+/src/*.class
+/src/*.log
+/src/*.pyc
+/src/*.swp
+/src/.DS_Store
+/src/.atom/
+/src/.buildlog/
+/src/.history
+/src/.svn/
+/src/migrate_working_dir/
+
+# IntelliJ related dentro de src
+/src/*.iml
+/src/*.ipr
+/src/*.iws
+/src/.idea/
+
+# VS Code
+/src/.vscode/
 
 # Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
-.dart_tool/
-.flutter-plugins
-.flutter-plugins-dependencies
-.pub-cache/
-.pub/
-/build/
+/src/**/doc/api/
+/src/**/ios/Flutter/.last_build_id
+/src/.dart_tool/
+/src/.flutter-plugins
+/src/.flutter-plugins-dependencies
+/src/.pub-cache/
+/src/.pub/
+/src/build/
 
 # Symbolication related
-app.*.symbols
+/src/app.*.symbols
 
 # Obfuscation related
-app.*.map.json
+/src/app.*.map.json
 
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+# Android Studio builds dentro de src
+/src/android/app/debug
+/src/android/app/profile
+/src/android/app/release
