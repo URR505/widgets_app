@@ -59,4 +59,9 @@ const appMenuItems = <MenuItem>[
       subTitle: 'Listas infinitas y pull to refresh',
       link: '/infinite',
       icon: Icons.list_alt_rounded),
+  MenuItem(
+      title: 'Theme changer screen',
+      subTitle: 'Listas infinitas y pull to refresh',
+      link: '/theme-changer',
+      icon: Icons.palette_outlined),
 ];

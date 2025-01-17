@@ -60,4 +60,10 @@ final appRouter = GoRouter(initialLocation: '/', routes: [
     pageBuilder: (context, state) =>
         const CupertinoPage(child: CounterScreen()),
   ),
+  GoRoute(
+    path: '/theme-changer',
+    name: ThemeChangerScreen.name,
+    pageBuilder: (context, state) =>
+        const CupertinoPage(child: ThemeChangerScreen()),
+  ),
 ]);
