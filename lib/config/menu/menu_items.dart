@@ -64,4 +64,9 @@ const appMenuItems = <MenuItem>[
       subTitle: 'Listas infinitas y pull to refresh',
       link: '/theme-changer',
       icon: Icons.palette_outlined),
+        MenuItem(
+      title: 'Random Word',
+      subTitle: 'Palabra aleatoria',
+      link: '/theme-changer',
+      icon: Icons.palette_outlined),
 ];
