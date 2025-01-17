@@ -1,11 +1,4 @@
-# Ignorar todo excepto este archivo .gitignore
-*
-!.gitignore
-
-# Contenido de src
-/src/**
-
-# Miscellaneous dentro de src
+# Miscellaneous
 /src/*.class
 /src/*.log
 /src/*.pyc
@@ -17,14 +10,16 @@
 /src/.svn/
 /src/migrate_working_dir/
 
-# IntelliJ related dentro de src
+# IntelliJ related
 /src/*.iml
 /src/*.ipr
 /src/*.iws
 /src/.idea/
 
-# VS Code
-/src/.vscode/
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+# /src/.vscode/
 
 # Flutter/Dart/Pub related
 /src/**/doc/api/
@@ -42,7 +37,7 @@
 # Obfuscation related
 /src/app.*.map.json
 
-# Android Studio builds dentro de src
+# Android Studio will place build artifacts here
 /src/android/app/debug
 /src/android/app/profile
 /src/android/app/release
