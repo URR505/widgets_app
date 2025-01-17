@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:go_router/go_router.dart';
+import 'package:widgets_app/presentation/screens/randomWord/random_word_screen.dart';
 import 'package:widgets_app/presentation/screens/screens.dart';
 
 final appRouter = GoRouter(initialLocation: '/', routes: [
@@ -65,5 +66,11 @@ final appRouter = GoRouter(initialLocation: '/', routes: [
     name: ThemeChangerScreen.name,
     pageBuilder: (context, state) =>
         const CupertinoPage(child: ThemeChangerScreen()),
+  ),
+  GoRoute(
+    path: '/random-word',
+    name: RandomWordScreen.name,
+    pageBuilder: (context, state) =>
+        const CupertinoPage(child: RandomWordScreen()),
   ),
 ]);
