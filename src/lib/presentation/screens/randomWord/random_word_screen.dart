@@ -6,6 +6,7 @@ import 'package:widgets_app/presentation/providers/random_word_provider.dart';
 class RandomWordScreen extends ConsumerWidget {
   const RandomWordScreen({super.key});
   static const name = 'random-word';
+  
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return DefaultTabController(
